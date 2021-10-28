@@ -12,10 +12,24 @@ body{
     margin: 20px/*topo e baixo*/ 50px/*esquerda e direita*/
 }
 
+.atalhos{
+    background-color: rgb(79, 116, 185);
+    margin:20px;
+    display: inline;
+    padding: 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 p, li{
     font-family: 'helvetica';
     font-size: 14px;
     text-align: justify;
+
 }
 
 strong{
