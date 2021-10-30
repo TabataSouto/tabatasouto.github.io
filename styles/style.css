@@ -1,53 +1,78 @@
-body{
-    background-color: rgb(177, 192, 219);;
-}
-
-.titulos{
-    font-family:'Times New Roman', Times, serif;
-    color:rgb(13, 126, 116);
-    text-align: center;
-    }
-
-.textos{
-    margin: 20px/*topo e baixo*/ 50px/*esquerda e direita*/
-}
-
-.atalhos{
-    background-color: rgb(79, 116, 185);
-    margin:20px;
-    display: inline;
-    padding: 10px 10px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
 p, li{
     font-family: 'helvetica';
     font-size: 14px;
     text-align: justify;
-
 }
 
 strong{
     color:rgb(79, 116, 185);
 }
 
-#img1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100%;
+/*estilização para todas as divs*/
+
+.header{
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 1.3%;
+    line-height: 0.5cm;
+    text-align: center;
 }
 
-#bloco{
-    background-color: rgb(255, 255, 255);
-    width: 600px;
-    height: 600px;
-    overflow: auto;
-    border: double 10px rgb(13,126,116);
-    margin: 200px auto;
+/*estilização dos links menu*/
+
+.menu ol{
+    background-color: rgb(79, 116, 185);
+    border-radius: 20px 10px;
+    padding: 20px;
 }
+
+.menu li{
+    text-align: center;
+    list-style: none;
+    display: inline;
+    padding: 8px;
+    background-color: white;
+    margin: 0px/*topo*/ 20px/*esquerda*/ 0px/*baixo*/ 20px/*direita*/;
+    border-radius: 10px 20px;
+    font-weight: bold;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(36, 129, 93);
+}
+
+.menu a:hover{
+    color: rgb(79, 116, 185);
+ font-weight:normal;
+}
+
+/* estilizações div indice do meu site*/
+
+.sobre img{
+    border: double 6px white;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(79, 116, 185);
+    width: 100px;
+    float: left;
+}
+
+.sobre h1, h2{
+    text-align: center;
+    margin-bottom: 20px;;
+    color:rgb(36, 129, 93)
+}
+
+.sobre p{
+    margin-top: 40px;
+}
+
+/* estilizações div minhas qualidades*/
