@@ -33,18 +33,17 @@ a {
 }
 
 .all {
-    padding: 1cm 10cm;
+    padding: 1cm 5cm;
 }
 
 /*estilização indice do meu site*/
 
 .menu {
     background-color: #93A290;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 55px 10px 5px;
 }
 
 .menu ol{
-    text-align: center;
     list-style: none;
     display: flex;
 }
