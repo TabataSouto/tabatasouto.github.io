@@ -19,12 +19,14 @@ body {
   margin: 5%;
 }
 
+/* ESTILIZAÇÕES MENU */
 #menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-basis: 30%;
   border-right: solid 1px rgb(219, 219, 219);
+  font-size: 18px;
 }
 
 #list-menu {
@@ -32,7 +34,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
-  font-size: 18px;
   max-height: 35%;
 }
 
@@ -41,6 +42,41 @@ body {
   color: rgb(196, 119, 155);
 }
 
+/* ESTILIZAÇÕE HOME */
 #desc {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
   flex-basis: 100%;
+}
+
+#container-texto {
+  text-align: justify;
+  flex-basis: 60%;
+  align-self: center;
+}
+
+#titulos > h1 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 6.3px;
+  color: rgb(196, 119, 155);
+}
+
+#titulos > h5:nth-child(3) {
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+#texto {
+  margin-top: 20px;
+}
+
+#img-tabata {
+  max-width: 40%;
+  border: solid 1px rgb(219, 219, 219);
+  padding: 5px;
+  float: left;
+  margin: 0 20px 0 0;
 }
