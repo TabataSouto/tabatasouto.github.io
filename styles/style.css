@@ -68,7 +68,8 @@ body {
 #titulos > h5:nth-child(3) {
   text-transform: uppercase;
   text-align: center;
-
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1.8px;
 }
 
 #texto {
