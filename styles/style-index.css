@@ -36,7 +36,7 @@ body {
   justify-content: space-evenly;
   list-style: none;
   padding: 0 36px;
-  max-height: 35%;
+  height: 285px;
 }
 
 #list-menu > li > a {

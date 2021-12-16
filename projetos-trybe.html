@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
+    <link href="styles/style-index.css" rel="stylesheet" type="text/css">
     <link href="styles/style-projetos-trybe.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
     
   <body>
 
-    <main id="all" class="content-all">
+    <main id="all">
 
       <header id="menu">
         <ul id="list-menu" class="content-list">
@@ -30,24 +31,54 @@
           <h1>Projetos realizados durante o curso:</h1>
         </div>
         
-        <div id="imgs">
-
-          <div>
-            <h5>
-              Fundamentos - JavaScrip: DOM, Eventos e Web Storage
-            </h5>
-            <img src="./imagens/todo-list.png" alt="Tabata Souto">
+        <div class="imgs-gallery">
+          <div class="imgs">
+            <h5>Introdução à HTML & CSS</h5>
+            <img id="lessons" src="./imagens/lessons.png" alt="Projeto Linções Aprendidas">
+            <p><strong>Descrição:</strong> Site desenvolvido contendo informações sobre o que aprendi na Trybe ao longo dos três primeiros blocos. Foi solicitado elementos posicionados e estilizados com semântica apropriada para ser acessível e melhor ranqueado.</p>
+            <div>
+              <a href="https://github.com/TabataSouto/lessons-learned">Github</a><a href="https://tabatasouto.github.io/lessons-learned/">Modelo web</a>
+            </div>
           </div>
-          
-          <div>
-            <h5>
-              Fundamentos - JavaScrip: DOM, Eventos e Web Storage
-            </h5>
-            <img src="./imagens/pixel-arts.png" alt="Tabata Souto">
-          </div>
-
+          <div class="imgs">
+            <h5>Introdução à JavaScript e Lógica de Programação</h5>
+            <img id="play" src="./imagens/playground-functions.png" alt="Projeto Parque de Funções">
+            <p><strong>Descrição:</strong> Implementação de funções conforme orientações passadas pela Trybe. Foi solicitado o desenvolvimento de 13 funções que funcionassem dinamicamente.</p>
+            <div>
+              <a href="https://github.com/TabataSouto/playground-functions">Github</a>
+            </div>
+          </div>  
         </div>
 
+        <div class="imgs-gallery">
+          <div class="imgs">
+            <h5>JavaScrip: DOM, Eventos e Web Storage</h5>
+            <img id="lessons" src="./imagens/pixel-arts.png" alt="Arte em Pixels">
+            <p><strong>Descrição:</strong> Implementação de uma página Web contendo uma paleta de cores funcional (com cores aleatórias a cada atualização da paǵina) que poderá ser utilizada para criar desenhos em pixels. Foi solicitado a utilização de JavaScript, css e Html.</p>
+            <div>
+              <a href="https://github.com/TabataSouto/pixels-arts">Github</a><a href="https://tabatasouto.github.io/pixels-arts/">Modelo web</a>
+            </div>
+          </div>
+          <div class="imgs">
+            <h5>JavaScrip: DOM, Eventos e Web Storage</h5>
+            <img id="play" src="./imagens/todo-list.png" alt="Projeto Lista de Tarefas">
+            <p><strong>Descrição:</strong> Criado uma lista de tarefas, com as seguintes solicitações: adicionar n tarefas, mudar o background ao selecionar uma tarefa adicionada, riscar as tarefas concluidas clicando duas vezes, mover uma tarefa para cima e para baixo com as setas, apagar apenas tarefas concluídas ou apenas tarefas selecionadas, salvar a lista de tarefas na máquina do usuário ao clicar em salvar e deletar toda a lista ao clicar no x.</p>
+            <div>
+              <a href="https://github.com/TabataSouto/todo-list">Github</a><a href="https://tabatasouto.github.io/todo-list/">Modelo web</a>
+            </div>
+          </div>  
+        </div>
+
+        <div class="imgs-gallery">
+          <div class="imgs">
+            <h5>HTML & CSS: Forms, Flexbox e Responsivo</h5>
+            <img id="lessons" src="./imagens/trybewarts.png" alt="Projeto Escola de Magia Trybewarts">
+            <p><strong>Descrição:</strong> Neste projeto, foi desenvolvida uma página de formulário da Escola de Magia de Trybewarts, em que as pessoas estudantes podem enviar seus feedbacks sobre ela. O tema desse projeto é baseado na obra 'Harry Potter', de J. K. Rowling, já que programar é o mais próximo que podemos chegar de algo verdadeiramente mágico.</p>
+            <div>
+              <a href="https://github.com/TabataSouto/trybewarts">Github</a><a href="https://tabatasouto.github.io/trybewarts/">Modelo web</a>
+            </div>
+          </div>
+        </div>
       </section>
 
     </main>
