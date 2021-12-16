@@ -60,18 +60,33 @@ body {
   margin-bottom: 20px;
 }
 
+#imgs > div > h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: solid 1px rgb(219, 219, 219);
+  padding: 5px;
+}
+
 #imgs {
   display: flex;
-  justify-content: space-evenly;
 }
 
-#imgs > img {
-  max-width: 45%;
-  border: solid 1px rgb(219, 219, 219);
-  padding: 5px;
+#imgs > div {
+  display: flex;
+  flex-direction: column;
   transition: 1s all ease;
+  border: solid 1px rgb(219, 219, 219);
+  background-color: white;
 }
 
-#imgs > img:hover {
+#imgs > div > img {
+  display: flex;
+  max-width: 90%;
+  padding: 5px;
+  align-self: center;
+}
+
+#imgs > div:hover {
   transform: scale(1.5);
 }
