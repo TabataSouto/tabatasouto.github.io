@@ -1,9 +1,10 @@
 #gallery {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 10px;
   flex-basis: 100%;
+  max-height: 200vh;
+  overflow: auto;
 }
 
 #titulo > h1 {
@@ -25,7 +26,7 @@
   align-content: center;
   flex-basis: 100%;
   text-align: center;
-  transition: 1s all ease;
+  /* transition: 1s all ease; */
   border: solid 1px rgb(219, 219, 219);
   background-color: rgb(255, 255, 255);
   margin-right: 5px;
@@ -51,7 +52,22 @@
   font-size: 12px;
   text-align: justify;
   align-self: center;
-  margin: 0 30px 15px 30px;
+  margin: 10px 30px 15px 30px;
+  display: none;
+}
+
+.imgs > div > a {
+  text-decoration: none;
+  color:rgb(196, 119, 155);
+  border: solid 1px rgb(219, 219, 219);
+  padding: 3px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.imgs:hover p, .imgs:hover div > a {
+  display: block;
 }
 
 .imgs > div {
@@ -65,10 +81,6 @@
   margin-bottom: 5px;
 }
 
-.imgs:hover {
-  transform: scale(1.3);
-}
-
 .twoProjects {
   display: flex;
   flex-direction: row;
@@ -76,12 +88,4 @@
 
 .twoProjects > img {
   width: 50%
-}
-
-.imgs > div > a {
-  text-decoration: none;
-  color:rgb(196, 119, 155);
-  border: solid 1px rgb(219, 219, 219);
-  padding: 3px 10px;
-  margin-bottom: 5px;
 }
