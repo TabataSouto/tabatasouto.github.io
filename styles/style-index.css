@@ -24,7 +24,7 @@ body {
 #menu {
   display: flex;
   flex-direction: row;
-  flex-basis: 30%;
+  flex-basis: 36%;
   border-right: solid 1px rgb(219, 219, 219);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 17px;
@@ -55,7 +55,7 @@ body {
 
 #container-texto {
   text-align: justify;
-  flex-basis: 60%;
+  flex-basis: 75%;
   align-self: center;
 }
 
@@ -83,4 +83,21 @@ body {
   padding: 5px;
   float: left;
   margin: 0 20px 0 0;
+}
+
+#social-networks {
+  flex-basis: 20%;
+  border-left: solid 1px rgb(219, 219, 219);
+  text-align: center;
+}
+
+#social-networks > nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+#social-networks > nav > a > img {
+  width: 60%;
 }
