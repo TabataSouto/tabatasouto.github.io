@@ -5,15 +5,15 @@
 
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/style-index.css" rel="stylesheet" type="text/css">
+    <link href="styles/style-contato.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
   </head>
     
   <body>
-
-    <section id="all" class="content-all">
+    <main id="all" class="content-all">
 
       <header id="menu">
         <ul id="list-menu" class="content-list">
@@ -24,14 +24,39 @@
         </ul>
       </header>
 
-      <main id="desc">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat ipsam ducimus blanditiis, corrupti est perferendis? Nostrum dolorem dolor ab in quas harum totam fugiat expedita, at alias voluptatem ratione?
-        </p>
-      </main>
-      
-    </section>
+      <section id="desc">
+        <div id="container-texto">
 
+          <p>Envie seu comentário sobre o que achou do meu portfólio. O que acharam legal, ou o que poderia melhorar. Sejam elogios ou criticas construtivas, será muito bem-vindo.</p>
+
+          <form action="https://api.staticforms.xyz/submit" method="post" id="form">
+            
+            <input type="hidden" name="accessKey" value="5ed114cf-ee7e-410b-b2be-ed9f45a75007">
+            <input type="hidden" name="redirectTo" value="contato.html">
+
+            <label for="name">
+              <p>Nome</p> <input type="text" name="name" id="name">
+            </label>
+            <label for="email">
+              <p>E-mail</p> <input type="email" name="email" id="email">
+            </label>
+
+            <div>
+              <label for="message">
+                <p>Mensagem</p>
+                <div>
+                  <textarea name="message" id="message" cols="53" rows="15" placeholder="Deixe seu comentário aqui"></textarea>
+                </div>
+              </label>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+          </form>
+        </div>
+      </section>
+
+    </main>
   </body>
 
 </html>

@@ -1,0 +1,13 @@
+#titulos > h5 {
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  text-align: center;
+  margin-left: 6px;
+  color: gray;
+}
+
+#img-loading {
+  max-width: 100%;
+  border: solid 1px rgb(219, 219, 219);
+  margin: 0 20px 0 0;
+}
