@@ -29,26 +29,26 @@
 
           <p>Envie seu comentário sobre o que achou do meu portfólio. O que acharam legal, ou o que poderia melhorar. Sejam elogios ou criticas construtivas, será muito bem-vindo.</p>
 
-          <form action="https://api.staticforms.xyz/submit" method="post" id="form">
-            
-            <input type="hidden" name="accessKey" value="5ed114cf-ee7e-410b-b2be-ed9f45a75007">
-            <input type="hidden" name="redirectTo" value="contato.html">
+          <form action="https://formsubmit.co/tabatac.souto@gmail.com" method="post" id="form">
 
             <label for="name">
-              <p>Nome</p> <input type="text" name="name" id="name">
+              <p>Nome</p> <input type="text" name="name" id="name" required>
             </label>
             <label for="email">
-              <p>E-mail</p> <input type="email" name="email" id="email">
+              <p>E-mail</p> <input type="email" name="email" id="email" required>
             </label>
 
             <div>
               <label for="message">
                 <p>Mensagem</p>
                 <div>
-                  <textarea name="message" id="message" cols="53" rows="15" placeholder="Deixe seu comentário aqui"></textarea>
+                  <textarea name="message" id="message" cols="53" rows="15" placeholder="Deixe seu comentário aqui" required></textarea>
                 </div>
               </label>
             </div>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contato.html">
+            <input type="hidden" name="_captcha" value="false">
 
             <button type="submit">Enviar</button>
 
