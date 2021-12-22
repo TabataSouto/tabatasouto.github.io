@@ -1,13 +1,83 @@
-#titulos > h5 {
-  text-transform: uppercase;
-  letter-spacing: 11px;
-  text-align: center;
-  margin-left: 6px;
-  color: gray;
+#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  flex-basis: 100%;
+  max-height: 200vh;
+  overflow: auto;
 }
 
-#img-loading {
-  max-width: 100%;
+#titulo > h1 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(196, 119, 155);
+  margin: 10px 15px;
+  letter-spacing: 10px;
+}
+
+.imgs-gallery {
+  display: flex;
+  margin-bottom:5px;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-basis: 100%;
+  text-align: center;
+  /* transition: 1s all ease; */
   border: solid 1px rgb(219, 219, 219);
-  margin: 0 20px 0 0;
+  background-color: rgb(255, 255, 255);
+  margin-right: 5px;
+}
+
+.imgs > h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 8px;
+  border-bottom: solid 1px rgb(219, 219, 219);
+}
+
+.imgs > img {
+  max-width: 90%;
+  padding: 5px;
+  align-self: center;
+  margin: auto;
+
+}
+
+.imgs > p {
+  font-size: 12px;
+  text-align: justify;
+  align-self: center;
+  margin: 0 20px 15px 20px;
+  display: none;
+}
+
+.imgs > div {
+  display: flex;
+  flex: row wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.imgs > div > a {
+  text-decoration: none;
+  color:rgb(196, 119, 155);
+  border: solid 1px rgb(219, 219, 219);
+  padding: 3px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.imgs:hover p , .imgs:hover div > a {
+  display: block;
 }

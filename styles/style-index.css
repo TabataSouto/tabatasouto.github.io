@@ -11,6 +11,11 @@ body {
   background: url('../imagens/bg.png');
 }
 
+#texto > p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 #all {
   display: flex;
   background-color: rgba(255, 255, 255, 0.897);
